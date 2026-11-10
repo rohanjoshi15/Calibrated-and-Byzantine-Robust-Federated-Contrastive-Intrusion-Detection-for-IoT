@@ -169,18 +169,4 @@ earlier CPU runs in `results/_v1/`, which is not part of this repository, so the
 
 `results/<phase>/<run_id>/` holds the `config.yaml` and `metrics.json` of every run behind these tables.
 
-## Authors
 
-Rohan Joshi, Pavan Kumar, Meera R, under the guidance of Prof. Pradeep Kumar Bhale (IIITDM Kancheepuram).
-
-## Citation
-
-To appear. Placeholder entry:
-
-```
-@misc{joshi_calibrated_byzantine_fedids,
-  title  = {Calibrated and Byzantine-Robust Federated Contrastive Intrusion Detection for IoT},
-  author = {Joshi, Rohan and Kumar, Pavan and R, Meera},
-  note   = {To appear}
-}
-```
