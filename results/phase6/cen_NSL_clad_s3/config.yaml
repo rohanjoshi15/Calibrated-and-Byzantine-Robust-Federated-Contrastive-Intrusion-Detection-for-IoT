@@ -1,0 +1,28 @@
+phase: phase6
+run_id: cen_NSL_clad_s3
+seed: 3
+split_seed: 3
+data:
+  name: nslkdd
+  fs: procedure
+mode: central
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 128
+  epochs: 60
+  normalize: true
+  loss: clad
+detect:
+  K:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  vmf_K:
+  - 4
+  - 8
+eval:
+  test: true
+device: cuda

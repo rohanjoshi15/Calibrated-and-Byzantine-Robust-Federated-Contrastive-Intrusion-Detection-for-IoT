@@ -1,0 +1,263 @@
+{
+ "dim": 69,
+ "n_train": 53492,
+ "n_train_benign": 37292,
+ "dropped_features": null,
+ "fs_info": null,
+ "device": "cuda",
+ "torch": "2.6.0+cu124",
+ "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+ "cuda": "12.4",
+ "data_version": null,
+ "kmeans_impl": "fast",
+ "train_info": {
+  "loss": 0.011103356107844995,
+  "steps": 4380,
+  "attack_frac": 0.5
+ },
+ "results": {
+  "template": {
+   "rho": {
+    "feco_p5": 0.9599695205688477,
+    "conf_a0.01": 0.8603936433792114,
+    "conf_a0.05": 0.9433159828186035,
+    "conf_a0.1": 0.9625672101974487
+   },
+   "val": {
+    "ranking": {
+     "auroc": 1.0,
+     "auprc": 1.0,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.0,
+     "tpr@1_v1dropint": 1.0,
+     "tpr@5_v1dropint": 1.0
+    },
+    "feco_p5": {
+     "acc": 0.9368683718028696,
+     "recall": 1.0,
+     "precision": 0.7805724197745013,
+     "f1": 0.876765708718948,
+     "fpr": 0.08141592920353982,
+     "tp": 1800,
+     "tn": 5709,
+     "fp": 506,
+     "fn": 0,
+     "auroc": 1.0,
+     "auprc": 1.0,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.0,
+     "tpr@1_v1dropint": 1.0,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.9599695205688477,
+     "recall_by_group": {
+      "mirai_ack": 1.0,
+      "mirai_scan": 1.0,
+      "mirai_syn": 1.0
+     }
+    },
+    "conf_a0.01": {
+     "acc": 0.9905177791640674,
+     "recall": 1.0,
+     "precision": 0.9594882729211087,
+     "f1": 0.9793253536452666,
+     "fpr": 0.012228479485116654,
+     "tp": 1800,
+     "tn": 6139,
+     "fp": 76,
+     "fn": 0,
+     "auroc": 1.0,
+     "auprc": 1.0,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.0,
+     "tpr@1_v1dropint": 1.0,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.8603936433792114,
+     "recall_by_group": {
+      "mirai_ack": 1.0,
+      "mirai_scan": 1.0,
+      "mirai_syn": 1.0
+     }
+    },
+    "conf_a0.05": {
+     "acc": 0.9618215845290081,
+     "recall": 1.0,
+     "precision": 0.8547008547008547,
+     "f1": 0.9216589861751151,
+     "fpr": 0.04923572003218021,
+     "tp": 1800,
+     "tn": 5909,
+     "fp": 306,
+     "fn": 0,
+     "auroc": 1.0,
+     "auprc": 1.0,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.0,
+     "tpr@1_v1dropint": 1.0,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.9433159828186035,
+     "recall_by_group": {
+      "mirai_ack": 1.0,
+      "mirai_scan": 1.0,
+      "mirai_syn": 1.0
+     }
+    },
+    "conf_a0.1": {
+     "acc": 0.9236431690580162,
+     "recall": 1.0,
+     "precision": 0.746268656716418,
+     "f1": 0.8547008547008548,
+     "fpr": 0.09847144006436041,
+     "tp": 1800,
+     "tn": 5603,
+     "fp": 612,
+     "fn": 0,
+     "auroc": 1.0,
+     "auprc": 1.0,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.0,
+     "tpr@1_v1dropint": 1.0,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.9625672101974487,
+     "recall_by_group": {
+      "mirai_ack": 1.0,
+      "mirai_scan": 1.0,
+      "mirai_syn": 1.0
+     }
+    }
+   },
+   "test": {
+    "ranking": {
+     "auroc": 0.9999486958487038,
+     "auprc": 0.999967679353115,
+     "tpr@1": 0.9996190476190476,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.01536481377202156,
+     "tpr@1_v1dropint": 0.9996190476190476,
+     "tpr@5_v1dropint": 1.0
+    },
+    "feco_p5": {
+     "acc": 0.9791809996709641,
+     "recall": 1.0,
+     "precision": 0.9679203539823009,
+     "f1": 0.9836987071388421,
+     "fpr": 0.05598905960904191,
+     "tp": 21000,
+     "tn": 11735,
+     "fp": 696,
+     "fn": 0,
+     "auroc": 0.9999486958487038,
+     "auprc": 0.999967679353115,
+     "tpr@1": 0.9996190476190476,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.01536481377202156,
+     "tpr@1_v1dropint": 0.9996190476190476,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.9599695205688477,
+     "recall_by_group": {
+      "gafgyt_combo": 1.0,
+      "gafgyt_junk": 1.0,
+      "gafgyt_scan": 1.0,
+      "gafgyt_tcp": 1.0,
+      "gafgyt_udp": 1.0,
+      "mirai_udp": 1.0,
+      "mirai_udpplain": 1.0
+     },
+     "novel_recall": 1.0
+    },
+    "conf_a0.01": {
+     "acc": 0.9972480631748976,
+     "recall": 0.9988571428571429,
+     "precision": 0.9967686751568143,
+     "f1": 0.9978118161925602,
+     "fpr": 0.005470195479044325,
+     "tp": 20976,
+     "tn": 12363,
+     "fp": 68,
+     "fn": 24,
+     "auroc": 0.9999486958487038,
+     "auprc": 0.999967679353115,
+     "tpr@1": 0.9996190476190476,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.01536481377202156,
+     "tpr@1_v1dropint": 0.9996190476190476,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.8603936433792114,
+     "recall_by_group": {
+      "gafgyt_combo": 1.0,
+      "gafgyt_junk": 0.9996666666666667,
+      "gafgyt_scan": 0.9943333333333333,
+      "gafgyt_tcp": 0.999,
+      "gafgyt_udp": 0.999,
+      "mirai_udp": 1.0,
+      "mirai_udpplain": 1.0
+     },
+     "novel_recall": 0.9988571428571429
+    },
+    "conf_a0.05": {
+     "acc": 0.9877658460710119,
+     "recall": 0.9999047619047619,
+     "precision": 0.9809857509927588,
+     "f1": 0.9903549109774791,
+     "fpr": 0.03274072882310353,
+     "tp": 20998,
+     "tn": 12024,
+     "fp": 407,
+     "fn": 2,
+     "auroc": 0.9999486958487038,
+     "auprc": 0.999967679353115,
+     "tpr@1": 0.9996190476190476,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.01536481377202156,
+     "tpr@1_v1dropint": 0.9996190476190476,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.9433159828186035,
+     "recall_by_group": {
+      "gafgyt_combo": 1.0,
+      "gafgyt_junk": 1.0,
+      "gafgyt_scan": 0.9993333333333333,
+      "gafgyt_tcp": 1.0,
+      "gafgyt_udp": 1.0,
+      "mirai_udp": 1.0,
+      "mirai_udpplain": 1.0
+     },
+     "novel_recall": 0.9999047619047619
+    },
+    "conf_a0.1": {
+     "acc": 0.9731985283120457,
+     "recall": 1.0,
+     "precision": 0.959079283887468,
+     "f1": 0.97911227154047,
+     "fpr": 0.07207786984152521,
+     "tp": 21000,
+     "tn": 11535,
+     "fp": 896,
+     "fn": 0,
+     "auroc": 0.9999486958487038,
+     "auprc": 0.999967679353115,
+     "tpr@1": 0.9996190476190476,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.01536481377202156,
+     "tpr@1_v1dropint": 0.9996190476190476,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.9625672101974487,
+     "recall_by_group": {
+      "gafgyt_combo": 1.0,
+      "gafgyt_junk": 1.0,
+      "gafgyt_scan": 1.0,
+      "gafgyt_tcp": 1.0,
+      "gafgyt_udp": 1.0,
+      "mirai_udp": 1.0,
+      "mirai_udpplain": 1.0
+     },
+     "novel_recall": 1.0
+    }
+   }
+  }
+ },
+ "runtime_s": 13.447654724121094
+}

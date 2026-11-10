@@ -1,0 +1,18 @@
+phase: phase6
+run_id: cen_NBA_svdd_s0
+seed: 0
+split_seed: 0
+data:
+  name: nbaiot
+mode: central
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 512
+  epochs: 30
+  loss: svdd
+  attack_frac: 0.0
+detect: {}
+eval:
+  test: true
+device: cuda

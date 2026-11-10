@@ -1,0 +1,26 @@
+phase: phase6
+run_id: lofo_CIC_Mirai_s1
+seed: 1
+split_seed: 1
+data:
+  name: ciciot
+  holdout: Mirai
+mode: central
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 512
+  epochs: 30
+detect:
+  K:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  vmf_K:
+  - 4
+  - 8
+eval:
+  test: true
+device: cuda

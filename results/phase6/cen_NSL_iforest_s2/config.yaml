@@ -1,0 +1,11 @@
+phase: phase6
+run_id: cen_NSL_iforest_s2
+seed: 2
+split_seed: 2
+data:
+  name: nslkdd
+  fs: procedure
+mode: iforest
+eval:
+  test: true
+device: cuda

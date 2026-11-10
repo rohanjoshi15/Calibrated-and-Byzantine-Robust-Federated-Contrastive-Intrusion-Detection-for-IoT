@@ -1,0 +1,22 @@
+phase: phase1
+run_id: tuneFL_iid_bs128_m0.9
+seed: 0
+split_seed: 0
+data:
+  name: nslkdd
+  fs: paper
+  scaler: minmax
+mode: fl
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 128
+  epochs: 60
+  normalize: true
+fl:
+  n_clients: 50
+  scheme: iid
+  rounds: 15
+  local_epochs: 4
+eval:
+  test: false

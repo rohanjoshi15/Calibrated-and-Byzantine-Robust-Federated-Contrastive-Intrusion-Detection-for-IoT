@@ -1,0 +1,27 @@
+phase: phase3
+run_id: cenNBA_lam0.5_s2
+seed: 2
+split_seed: 2
+data:
+  name: nbaiot
+mode: central
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 512
+  epochs: 30
+  lam_proto: 0.5
+  K_train: 4
+detect:
+  K:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  vmf_K:
+  - 1
+  - 4
+  - 8
+eval:
+  test: true

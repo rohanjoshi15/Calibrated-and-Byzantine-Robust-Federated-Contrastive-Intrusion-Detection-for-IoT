@@ -1,0 +1,22 @@
+phase: phase2
+run_id: splitpaperFL_iid_s2
+seed: 2
+split_seed: 2
+data:
+  name: nslkdd
+  fs: paper
+mode: fl
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 64
+  epochs: 60
+  normalize: true
+fl:
+  n_clients: 50
+  rounds: 15
+  local_epochs: 4
+  scheme: iid
+eval:
+  test: true
+device: cuda

@@ -1,0 +1,32 @@
+phase: phase8_equiv
+run_id: eqP4_nba_dir1.0_s4
+seed: 4
+split_seed: 4
+data:
+  name: nbaiot
+mode: fed
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 256
+  epochs: 30
+fl:
+  n_clients: 45
+  rounds: 15
+  local_epochs: 4
+  benign_scheme: dirichlet
+  attack_scheme: group
+  benign_alpha: 1.0
+detect:
+  K_fed:
+  - 1
+  - 4
+  calib_caps:
+  - 25
+  - 50
+  - 100
+  - 200
+eval:
+  test: true
+kmeans_impl: legacy
+device: cuda

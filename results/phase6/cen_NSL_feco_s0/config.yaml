@@ -1,0 +1,27 @@
+phase: phase6
+run_id: cen_NSL_feco_s0
+seed: 0
+split_seed: 0
+data:
+  name: nslkdd
+  fs: procedure
+mode: central
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 128
+  epochs: 60
+  normalize: true
+detect:
+  K:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  vmf_K:
+  - 4
+  - 8
+eval:
+  test: true
+device: cuda

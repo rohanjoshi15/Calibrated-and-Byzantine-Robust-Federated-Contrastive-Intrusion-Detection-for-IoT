@@ -1,0 +1,34 @@
+{
+ "central": {
+  "tau": 0.2,
+  "momentum": 0.9,
+  "batch_size": 128,
+  "epochs": 60,
+  "normalize": true
+ },
+ "_provenance": {
+  "central": {
+   "run_id": "tuneC_tau0.2_m0.9_bs128_ep60",
+   "n_candidates": 38,
+   "val_tpr@1,auroc": [
+    0.9984,
+    0.9998952258200451
+   ]
+  },
+  "fl": {
+   "run_id": "tuneFL_iid_bs64_m0.9",
+   "n_candidates": 6,
+   "val_tpr@1,auroc": [
+    0.987,
+    0.9987488447236397
+   ]
+  }
+ },
+ "fl": {
+  "tau": 0.2,
+  "momentum": 0.9,
+  "batch_size": 64,
+  "epochs": 60,
+  "normalize": true
+ }
+}

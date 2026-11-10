@@ -1,0 +1,36 @@
+phase: phase6
+run_id: fl_CIC_dir0.5_clad_fedprox_s0
+seed: 0
+split_seed: 0
+data:
+  name: ciciot
+mode: fl
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 256
+  epochs: 30
+  loss: clad
+  mu_prox: 0.1
+fl:
+  rounds: 15
+  local_epochs: 4
+  n_clients: 50
+  benign_scheme: dirichlet
+  benign_alpha: 0.5
+  attack_scheme: dirichlet
+  attack_alpha: 0.5
+  algo: fedprox
+detect:
+  K:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  vmf_K:
+  - 4
+  - 8
+eval:
+  test: true
+device: cuda

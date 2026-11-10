@@ -1,0 +1,17 @@
+phase: phase1
+run_id: tuneC_nonorm_tau0.1_m0.9_bs512_ep60
+seed: 0
+split_seed: 0
+data:
+  name: nslkdd
+  fs: paper
+  scaler: minmax
+mode: central
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 512
+  epochs: 60
+  normalize: false
+eval:
+  test: false

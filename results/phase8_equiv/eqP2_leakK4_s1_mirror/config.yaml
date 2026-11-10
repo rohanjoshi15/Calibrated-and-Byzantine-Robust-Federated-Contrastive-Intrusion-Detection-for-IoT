@@ -1,0 +1,20 @@
+phase: phase8_equiv
+run_id: eqP2_leakK4_s1_mirror
+seed: 1
+split_seed: 1
+data:
+  name: nslkdd
+  fs: procedure
+  n_anova: 4
+  test_file: mirror
+mode: central
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 128
+  epochs: 60
+  normalize: true
+eval:
+  test: true
+kmeans_impl: legacy
+device: cuda

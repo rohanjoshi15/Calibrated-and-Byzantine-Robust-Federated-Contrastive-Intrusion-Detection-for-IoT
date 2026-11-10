@@ -1,0 +1,20 @@
+phase: phase6
+run_id: cen_NSL_svdd_s2
+seed: 2
+split_seed: 2
+data:
+  name: nslkdd
+  fs: procedure
+mode: central
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 128
+  epochs: 60
+  normalize: true
+  loss: svdd
+  attack_frac: 0.0
+detect: {}
+eval:
+  test: true
+device: cuda

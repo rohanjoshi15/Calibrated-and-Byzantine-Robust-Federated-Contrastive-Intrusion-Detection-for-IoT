@@ -1,0 +1,37 @@
+{
+ "cic": {
+  "tau": 0.1,
+  "momentum": 0.9,
+  "batch_size": 512,
+  "epochs": 30
+ },
+ "_provenance": {
+  "cic": {
+   "run_id": "tuneCIC_tau0.1_ep30",
+   "n_candidates": 6,
+   "val_tpr@1,auroc": [
+    0.8008,
+    0.9620029831152044
+   ],
+   "note": "Phase 8: re-selected on CICIoT split v2 (D-026), cuda runs; same choice as v1"
+  },
+  "mu_prox": {
+   "run_id": "tuneMU_fedprox_0.1",
+   "val_tpr@1,auroc": [
+    0.985,
+    0.9987697628389681
+   ],
+   "n_candidates": 3
+  },
+  "mu_moon": {
+   "run_id": "tuneMU_moon_0.1",
+   "val_tpr@1,auroc": [
+    0.9852,
+    0.9988740495204725
+   ],
+   "n_candidates": 3
+  }
+ },
+ "mu_prox": 0.1,
+ "mu_moon": 0.1
+}

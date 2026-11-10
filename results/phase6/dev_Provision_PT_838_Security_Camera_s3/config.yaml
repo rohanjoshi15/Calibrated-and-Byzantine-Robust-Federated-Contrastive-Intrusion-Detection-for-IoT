@@ -1,0 +1,20 @@
+phase: phase6
+run_id: dev_Provision_PT_838_Security_Camera_s3
+seed: 3
+split_seed: 3
+data:
+  name: nbaiot
+  devices:
+  - Provision_PT_838_Security_Camera
+mode: central
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 512
+  epochs: 30
+detect:
+  K:
+  - 1
+eval:
+  test: true
+device: cuda

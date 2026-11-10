@@ -1,0 +1,2 @@
+pair,n_numeric_fields,max_abs_diff,bit_identical,device
+"detA vs detB (corrC_s0, cuda)",193,0.0,True,cuda

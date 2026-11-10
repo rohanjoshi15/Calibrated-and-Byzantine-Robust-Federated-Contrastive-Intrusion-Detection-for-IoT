@@ -1,0 +1,30 @@
+phase: phase4
+run_id: nba_dir0.1_s3
+seed: 3
+split_seed: 3
+data:
+  name: nbaiot
+mode: fed
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 256
+  epochs: 30
+fl:
+  n_clients: 45
+  rounds: 15
+  local_epochs: 4
+  benign_scheme: dirichlet
+  attack_scheme: group
+  benign_alpha: 0.1
+detect:
+  K_fed:
+  - 1
+  - 4
+  calib_caps:
+  - 25
+  - 50
+  - 100
+  - 200
+eval:
+  test: true

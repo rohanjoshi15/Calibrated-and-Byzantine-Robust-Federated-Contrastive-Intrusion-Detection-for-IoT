@@ -1,0 +1,12 @@
+torch
+flwr[simulation]
+numpy
+pandas
+pyarrow
+scikit-learn
+scipy
+pyyaml
+matplotlib
+tqdm
+pytest
+pypdf

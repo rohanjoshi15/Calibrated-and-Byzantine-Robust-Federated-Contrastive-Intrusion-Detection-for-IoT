@@ -1,0 +1,135 @@
+{
+ "dim": 76,
+ "n_train": 479356,
+ "n_train_benign": 333556,
+ "dropped_features": null,
+ "fs_info": null,
+ "train_info": {
+  "loss": 0.024701400421322513,
+  "steps": 39090,
+  "attack_frac": 0.5
+ },
+ "results": {
+  "template": {
+   "rho": {
+    "feco_p5": 0.9959180355072021,
+    "conf_a0.01": 0.9057077169418335,
+    "conf_a0.05": 0.9883056879043579,
+    "conf_a0.1": 0.9957901239395142
+   },
+   "val": {
+    "ranking": {
+     "auroc": 0.9999922062238282,
+     "auprc": 0.9999727867011883,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0
+    },
+    "feco_p5": {
+     "acc": 0.9198657232003565,
+     "recall": 1.0,
+     "precision": 0.7379401448549173,
+     "f1": 0.8492123817262076,
+     "fpr": 0.10348611310979997,
+     "tp": 16200,
+     "tn": 49839,
+     "fp": 5753,
+     "fn": 0,
+     "auroc": 0.9999922062238282,
+     "auprc": 0.9999727867011883,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "rho": 0.9959180355072021,
+     "recall_by_group": {
+      "gafgyt_combo": 1.0,
+      "gafgyt_tcp": 1.0,
+      "gafgyt_udp": 1.0,
+      "mirai_ack": 1.0,
+      "mirai_scan": 1.0,
+      "mirai_syn": 1.0,
+      "mirai_udp": 1.0,
+      "mirai_udpplain": 1.0
+     }
+    },
+    "conf_a0.01": {
+     "acc": 0.9920464675729886,
+     "recall": 1.0,
+     "precision": 0.9659531333850099,
+     "f1": 0.9826817506293409,
+     "fpr": 0.010271262052093827,
+     "tp": 16200,
+     "tn": 55021,
+     "fp": 571,
+     "fn": 0,
+     "auroc": 0.9999922062238282,
+     "auprc": 0.9999727867011883,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "rho": 0.9057077169418335,
+     "recall_by_group": {
+      "gafgyt_combo": 1.0,
+      "gafgyt_tcp": 1.0,
+      "gafgyt_udp": 1.0,
+      "mirai_ack": 1.0,
+      "mirai_scan": 1.0,
+      "mirai_syn": 1.0,
+      "mirai_udp": 1.0,
+      "mirai_udpplain": 1.0
+     }
+    },
+    "conf_a0.05": {
+     "acc": 0.9615556050813461,
+     "recall": 1.0,
+     "precision": 0.8544303797468354,
+     "f1": 0.9215017064846416,
+     "fpr": 0.04964743128507699,
+     "tp": 16200,
+     "tn": 52832,
+     "fp": 2760,
+     "fn": 0,
+     "auroc": 0.9999922062238282,
+     "auprc": 0.9999727867011883,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "rho": 0.9883056879043579,
+     "recall_by_group": {
+      "gafgyt_combo": 1.0,
+      "gafgyt_tcp": 1.0,
+      "gafgyt_udp": 1.0,
+      "mirai_ack": 1.0,
+      "mirai_scan": 1.0,
+      "mirai_syn": 1.0,
+      "mirai_udp": 1.0,
+      "mirai_udpplain": 1.0
+     }
+    },
+    "conf_a0.1": {
+     "acc": 0.9220804546467573,
+     "recall": 1.0,
+     "precision": 0.7433238506010829,
+     "f1": 0.8527662262462494,
+     "fpr": 0.10062598935098575,
+     "tp": 16200,
+     "tn": 49998,
+     "fp": 5594,
+     "fn": 0,
+     "auroc": 0.9999922062238282,
+     "auprc": 0.9999727867011883,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "rho": 0.9957901239395142,
+     "recall_by_group": {
+      "gafgyt_combo": 1.0,
+      "gafgyt_tcp": 1.0,
+      "gafgyt_udp": 1.0,
+      "mirai_ack": 1.0,
+      "mirai_scan": 1.0,
+      "mirai_syn": 1.0,
+      "mirai_udp": 1.0,
+      "mirai_udpplain": 1.0
+     }
+    }
+   }
+  }
+ },
+ "runtime_s": 482.00999188423157
+}

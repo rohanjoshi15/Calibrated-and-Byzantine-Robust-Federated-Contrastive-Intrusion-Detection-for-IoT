@@ -1,0 +1,17 @@
+phase: phase2
+run_id: splitpaperC_s2
+seed: 2
+split_seed: 2
+data:
+  name: nslkdd
+  fs: paper
+mode: central
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 128
+  epochs: 60
+  normalize: true
+eval:
+  test: true
+device: cuda

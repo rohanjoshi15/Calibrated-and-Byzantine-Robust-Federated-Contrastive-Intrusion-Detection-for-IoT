@@ -1,0 +1,18 @@
+phase: phase2
+run_id: loco_Probe_s1
+seed: 1
+split_seed: 1
+data:
+  name: nslkdd
+  fs: procedure
+  holdout: Probe
+mode: central
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 128
+  epochs: 60
+  normalize: true
+eval:
+  test: true
+device: cuda

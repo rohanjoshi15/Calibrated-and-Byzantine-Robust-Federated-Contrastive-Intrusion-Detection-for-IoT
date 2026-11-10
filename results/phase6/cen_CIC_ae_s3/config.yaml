@@ -1,0 +1,18 @@
+phase: phase6
+run_id: cen_CIC_ae_s3
+seed: 3
+split_seed: 3
+data:
+  name: ciciot
+mode: central
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 512
+  epochs: 30
+  loss: ae
+  attack_frac: 0.0
+detect: {}
+eval:
+  test: true
+device: cuda

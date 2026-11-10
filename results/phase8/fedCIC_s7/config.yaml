@@ -1,0 +1,32 @@
+phase: phase8
+run_id: fedCIC_s7
+seed: 7
+split_seed: 7
+data:
+  name: ciciot
+mode: fed
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 256
+  epochs: 30
+fl:
+  n_clients: 50
+  rounds: 15
+  local_epochs: 4
+  benign_scheme: dirichlet
+  benign_alpha: 0.5
+  attack_scheme: dirichlet
+  attack_alpha: 0.5
+detect:
+  K_fed:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  sigma:
+  - 0.0
+eval:
+  test: true
+device: cuda

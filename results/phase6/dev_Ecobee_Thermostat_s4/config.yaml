@@ -1,0 +1,20 @@
+phase: phase6
+run_id: dev_Ecobee_Thermostat_s4
+seed: 4
+split_seed: 4
+data:
+  name: nbaiot
+  devices:
+  - Ecobee_Thermostat
+mode: central
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 512
+  epochs: 30
+detect:
+  K:
+  - 1
+eval:
+  test: true
+device: cuda

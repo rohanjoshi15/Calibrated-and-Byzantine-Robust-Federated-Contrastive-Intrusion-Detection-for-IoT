@@ -1,0 +1,11 @@
+metric,count,median,max,n_runs,devices
+acc,39,0,0.000121729,120,cpu (v1) vs cuda (Phase 8)
+asr_global,63,0,0.000205761,120,cpu (v1) vs cuda (Phase 8)
+auprc,120,1.03817e-06,6.1589e-05,120,cpu (v1) vs cuda (Phase 8)
+auroc,120,2.54541e-09,4.64062e-05,120,cpu (v1) vs cuda (Phase 8)
+fpr,39,0,0.000224844,120,cpu (v1) vs cuda (Phase 8)
+mean_fpr,63,3.74689e-05,0.000571251,120,cpu (v1) vs cuda (Phase 8)
+recall,39,0,2.51572e-05,120,cpu (v1) vs cuda (Phase 8)
+tpr@1,120,0,0.00155975,120,cpu (v1) vs cuda (Phase 8)
+tpr@5,120,0,0.000169811,120,cpu (v1) vs cuda (Phase 8)
+tpr_mean,63,0,0.000328042,120,cpu (v1) vs cuda (Phase 8)

@@ -1,0 +1,35 @@
+phase: phase5
+seed: 4
+split_seed: 4
+data:
+  name: nslkdd
+  fs: procedure
+mode: fed
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 64
+  epochs: 60
+  normalize: true
+fl:
+  n_clients: 50
+  rounds: 15
+  local_epochs: 4
+  benign_scheme: dirichlet
+  benign_alpha: 0.5
+  attack_scheme: dirichlet
+  attack_alpha: 0.5
+  agg: median
+  agg_kw: null
+detect:
+  K_fed:
+  - 1
+eval:
+  test: true
+run_id: NSL_wl_f0.2_b5.0_median_s4
+byz:
+  attack: whitelist
+  frac: 0.2
+  boost: 5.0
+  atk_lr_mult: 10.0
+device: cuda

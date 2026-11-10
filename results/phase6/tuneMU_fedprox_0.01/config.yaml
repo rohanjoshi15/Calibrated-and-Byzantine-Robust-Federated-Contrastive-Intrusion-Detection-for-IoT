@@ -1,0 +1,29 @@
+phase: phase6
+run_id: tuneMU_fedprox_0.01
+seed: 0
+split_seed: 0
+data:
+  name: nslkdd
+  fs: procedure
+mode: fl
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 64
+  epochs: 60
+  normalize: true
+  mu_prox: 0.01
+fl:
+  n_clients: 50
+  rounds: 15
+  local_epochs: 4
+  benign_scheme: dirichlet
+  benign_alpha: 0.5
+  attack_scheme: dirichlet
+  attack_alpha: 0.5
+  algo: fedprox
+detect:
+  K:
+  - 1
+eval:
+  test: false

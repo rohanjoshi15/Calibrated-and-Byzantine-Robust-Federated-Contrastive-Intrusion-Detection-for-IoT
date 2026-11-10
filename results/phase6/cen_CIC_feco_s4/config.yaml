@@ -1,0 +1,25 @@
+phase: phase6
+run_id: cen_CIC_feco_s4
+seed: 4
+split_seed: 4
+data:
+  name: ciciot
+mode: central
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 512
+  epochs: 30
+detect:
+  K:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  vmf_K:
+  - 4
+  - 8
+eval:
+  test: true
+device: cuda

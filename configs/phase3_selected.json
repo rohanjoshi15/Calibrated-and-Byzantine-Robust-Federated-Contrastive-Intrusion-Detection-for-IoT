@@ -1,0 +1,18 @@
+{
+ "nba": {
+  "tau": 0.1,
+  "momentum": 0.9,
+  "batch_size": 512,
+  "epochs": 30
+ },
+ "_provenance": {
+  "nba": {
+   "run_id": "tuneNBA_tau0.1_ep30",
+   "n_candidates": 6,
+   "val_tpr@1,auroc": [
+    1.0,
+    0.9999971440956954
+   ]
+  }
+ }
+}

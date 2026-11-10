@@ -1,0 +1,20 @@
+phase: phase1
+run_id: debugC_A3_sel_log1p_s3
+seed: 3
+split_seed: 3
+data:
+  name: nslkdd
+  fs: paper
+  scaler: minmax
+  train_on: full
+  log1p: true
+mode: central
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 128
+  epochs: 60
+  normalize: true
+eval:
+  test: true
+device: cuda

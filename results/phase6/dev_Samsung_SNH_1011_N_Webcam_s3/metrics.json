@@ -1,0 +1,243 @@
+{
+ "dim": 61,
+ "n_train": 47490,
+ "n_train_benign": 31290,
+ "dropped_features": null,
+ "fs_info": null,
+ "device": "cuda",
+ "torch": "2.6.0+cu124",
+ "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+ "cuda": "12.4",
+ "data_version": null,
+ "kmeans_impl": "fast",
+ "train_info": {
+  "loss": 0.01797236637570416,
+  "steps": 3690,
+  "attack_frac": 0.5
+ },
+ "results": {
+  "template": {
+   "rho": {
+    "feco_p5": 0.9529954791069031,
+    "conf_a0.01": 0.8485703468322754,
+    "conf_a0.05": 0.9041197896003723,
+    "conf_a0.1": 0.9548490643501282
+   },
+   "val": {
+    "ranking": {
+     "auroc": 0.9999972302119953,
+     "auprc": 0.9999920895704029,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.0049856184084372005,
+     "tpr@1_v1dropint": 1.0,
+     "tpr@5_v1dropint": 1.0
+    },
+    "feco_p5": {
+     "acc": 0.9241625089094797,
+     "recall": 1.0,
+     "precision": 0.7718696397941681,
+     "f1": 0.8712487899322363,
+     "fpr": 0.10201342281879194,
+     "tp": 1800,
+     "tn": 4683,
+     "fp": 532,
+     "fn": 0,
+     "auroc": 0.9999972302119953,
+     "auprc": 0.9999920895704029,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.0049856184084372005,
+     "tpr@1_v1dropint": 1.0,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.9529954791069031,
+     "recall_by_group": {
+      "gafgyt_combo": 1.0,
+      "gafgyt_scan": 1.0,
+      "gafgyt_tcp": 1.0
+     }
+    },
+    "conf_a0.01": {
+     "acc": 0.9918745545260157,
+     "recall": 1.0,
+     "precision": 0.9693053311793215,
+     "f1": 0.9844134536505331,
+     "fpr": 0.010930009587727708,
+     "tp": 1800,
+     "tn": 5158,
+     "fp": 57,
+     "fn": 0,
+     "auroc": 0.9999972302119953,
+     "auprc": 0.9999920895704029,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.0049856184084372005,
+     "tpr@1_v1dropint": 1.0,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.8485703468322754,
+     "recall_by_group": {
+      "gafgyt_combo": 1.0,
+      "gafgyt_scan": 1.0,
+      "gafgyt_tcp": 1.0
+     }
+    },
+    "conf_a0.05": {
+     "acc": 0.962223806129722,
+     "recall": 1.0,
+     "precision": 0.8716707021791767,
+     "f1": 0.9314359637774903,
+     "fpr": 0.05081495685522531,
+     "tp": 1800,
+     "tn": 4950,
+     "fp": 265,
+     "fn": 0,
+     "auroc": 0.9999972302119953,
+     "auprc": 0.9999920895704029,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.0049856184084372005,
+     "tpr@1_v1dropint": 1.0,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.9041197896003723,
+     "recall_by_group": {
+      "gafgyt_combo": 1.0,
+      "gafgyt_scan": 1.0,
+      "gafgyt_tcp": 1.0
+     }
+    },
+    "conf_a0.1": {
+     "acc": 0.921311475409836,
+     "recall": 1.0,
+     "precision": 0.7653061224489796,
+     "f1": 0.8670520231213872,
+     "fpr": 0.10584851390220518,
+     "tp": 1800,
+     "tn": 4663,
+     "fp": 552,
+     "fn": 0,
+     "auroc": 0.9999972302119953,
+     "auprc": 0.9999920895704029,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.0049856184084372005,
+     "tpr@1_v1dropint": 1.0,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.9548490643501282,
+     "recall_by_group": {
+      "gafgyt_combo": 1.0,
+      "gafgyt_scan": 1.0,
+      "gafgyt_tcp": 1.0
+     }
+    }
+   },
+   "test": {
+    "ranking": {
+     "auroc": 1.0,
+     "auprc": 1.0,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.0,
+     "tpr@1_v1dropint": 1.0,
+     "tpr@5_v1dropint": 1.0
+    },
+    "feco_p5": {
+     "acc": 0.9578210590383445,
+     "recall": 1.0,
+     "precision": 0.8964589870013447,
+     "f1": 0.9454029780193809,
+     "fpr": 0.06644295302013423,
+     "tp": 6000,
+     "tn": 9737,
+     "fp": 693,
+     "fn": 0,
+     "auroc": 1.0,
+     "auprc": 1.0,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.0,
+     "tpr@1_v1dropint": 1.0,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.9529954791069031,
+     "recall_by_group": {
+      "gafgyt_junk": 1.0,
+      "gafgyt_udp": 1.0
+     },
+     "novel_recall": 1.0
+    },
+    "conf_a0.01": {
+     "acc": 0.9986001217285454,
+     "recall": 1.0,
+     "precision": 0.9961813049975096,
+     "f1": 0.9980869999168261,
+     "fpr": 0.002205177372962608,
+     "tp": 6000,
+     "tn": 10407,
+     "fp": 23,
+     "fn": 0,
+     "auroc": 1.0,
+     "auprc": 1.0,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.0,
+     "tpr@1_v1dropint": 1.0,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.8485703468322754,
+     "recall_by_group": {
+      "gafgyt_junk": 1.0,
+      "gafgyt_udp": 1.0
+     },
+     "novel_recall": 1.0
+    },
+    "conf_a0.05": {
+     "acc": 0.9905660377358491,
+     "recall": 1.0,
+     "precision": 0.974817221770918,
+     "f1": 0.9872480460715756,
+     "fpr": 0.014860977948226271,
+     "tp": 6000,
+     "tn": 10275,
+     "fp": 155,
+     "fn": 0,
+     "auroc": 1.0,
+     "auprc": 1.0,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.0,
+     "tpr@1_v1dropint": 1.0,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.9041197896003723,
+     "recall_by_group": {
+      "gafgyt_junk": 1.0,
+      "gafgyt_udp": 1.0
+     },
+     "novel_recall": 1.0
+    },
+    "conf_a0.1": {
+     "acc": 0.9567255021302495,
+     "recall": 1.0,
+     "precision": 0.894054537326777,
+     "f1": 0.9440641963653529,
+     "fpr": 0.06816874400767019,
+     "tp": 6000,
+     "tn": 9719,
+     "fp": 711,
+     "fn": 0,
+     "auroc": 1.0,
+     "auprc": 1.0,
+     "tpr@1": 1.0,
+     "tpr@5": 1.0,
+     "fpr@tpr99.98": 0.0,
+     "tpr@1_v1dropint": 1.0,
+     "tpr@5_v1dropint": 1.0,
+     "rho": 0.9548490643501282,
+     "recall_by_group": {
+      "gafgyt_junk": 1.0,
+      "gafgyt_udp": 1.0
+     },
+     "novel_recall": 1.0
+    }
+   }
+  }
+ },
+ "runtime_s": 11.588293552398682
+}

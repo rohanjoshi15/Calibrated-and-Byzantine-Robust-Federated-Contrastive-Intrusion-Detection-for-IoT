@@ -1,0 +1,32 @@
+phase: phase5
+seed: 3
+split_seed: 3
+data:
+  name: nbaiot
+mode: fed
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 256
+  epochs: 30
+fl:
+  n_clients: 45
+  rounds: 15
+  local_epochs: 4
+  benign_scheme: natural
+  attack_scheme: group
+  agg: trimmed
+  agg_kw:
+    beta: 0.3
+detect:
+  K_fed:
+  - 1
+eval:
+  test: true
+run_id: NBA_wl_f0.2_b1.0_trimmed_s3
+byz:
+  attack: whitelist
+  frac: 0.2
+  boost: 1.0
+  atk_lr_mult: 10.0
+device: cuda

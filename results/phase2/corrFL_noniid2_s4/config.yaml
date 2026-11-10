@@ -1,0 +1,22 @@
+phase: phase2
+run_id: corrFL_noniid2_s4
+seed: 4
+split_seed: 4
+data:
+  name: nslkdd
+  fs: federated
+mode: fl
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 64
+  epochs: 60
+  normalize: true
+fl:
+  n_clients: 50
+  rounds: 15
+  local_epochs: 4
+  scheme: noniid2
+eval:
+  test: true
+device: cuda

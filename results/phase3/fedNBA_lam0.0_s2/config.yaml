@@ -1,0 +1,39 @@
+phase: phase3
+run_id: fedNBA_lam0.0_s2
+seed: 2
+split_seed: 2
+data:
+  name: nbaiot
+mode: fed
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 256
+  epochs: 30
+  lam_proto: 0.0
+  K_train: 4
+fl:
+  n_clients: 45
+  rounds: 15
+  local_epochs: 4
+  benign_scheme: natural
+  attack_scheme: group
+detect:
+  K_fed:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  sigma:
+  - 0.0
+  - 0.01
+  - 0.05
+  - 0.1
+  calib_caps:
+  - 25
+  - 50
+  - 100
+  - 200
+eval:
+  test: true

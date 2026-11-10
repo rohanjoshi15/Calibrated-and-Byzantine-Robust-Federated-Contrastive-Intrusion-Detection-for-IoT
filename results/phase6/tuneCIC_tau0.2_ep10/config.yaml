@@ -1,0 +1,18 @@
+phase: phase6
+run_id: tuneCIC_tau0.2_ep10
+seed: 0
+split_seed: 0
+data:
+  name: ciciot
+mode: central
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 512
+  epochs: 10
+detect:
+  K:
+  - 1
+eval:
+  test: false
+device: cuda

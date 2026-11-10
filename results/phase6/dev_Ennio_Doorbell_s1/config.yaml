@@ -1,0 +1,20 @@
+phase: phase6
+run_id: dev_Ennio_Doorbell_s1
+seed: 1
+split_seed: 1
+data:
+  name: nbaiot
+  devices:
+  - Ennio_Doorbell
+mode: central
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 512
+  epochs: 30
+detect:
+  K:
+  - 1
+eval:
+  test: true
+device: cuda

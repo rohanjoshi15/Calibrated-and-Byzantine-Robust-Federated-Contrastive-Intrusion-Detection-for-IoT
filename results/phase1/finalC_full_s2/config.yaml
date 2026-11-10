@@ -1,0 +1,19 @@
+phase: phase1
+run_id: finalC_full_s2
+seed: 2
+split_seed: 2
+data:
+  name: nslkdd
+  fs: paper
+  scaler: minmax
+  train_on: full
+mode: central
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 128
+  epochs: 60
+  normalize: true
+eval:
+  test: true
+device: cuda

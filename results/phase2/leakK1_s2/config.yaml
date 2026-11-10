@@ -1,0 +1,18 @@
+phase: phase2
+run_id: leakK1_s2
+seed: 2
+split_seed: 2
+data:
+  name: nslkdd
+  fs: procedure
+  n_anova: 1
+mode: central
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 128
+  epochs: 60
+  normalize: true
+eval:
+  test: true
+device: cuda

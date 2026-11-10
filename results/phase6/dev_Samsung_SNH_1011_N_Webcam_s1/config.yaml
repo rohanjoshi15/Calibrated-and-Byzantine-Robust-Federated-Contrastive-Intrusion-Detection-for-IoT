@@ -1,0 +1,20 @@
+phase: phase6
+run_id: dev_Samsung_SNH_1011_N_Webcam_s1
+seed: 1
+split_seed: 1
+data:
+  name: nbaiot
+  devices:
+  - Samsung_SNH_1011_N_Webcam
+mode: central
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 512
+  epochs: 30
+detect:
+  K:
+  - 1
+eval:
+  test: true
+device: cuda

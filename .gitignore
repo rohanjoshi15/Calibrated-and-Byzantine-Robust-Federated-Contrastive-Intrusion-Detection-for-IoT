@@ -1,0 +1,9 @@
+/data/
+*.pt
+*.pth
+*.ckpt
+*.log
+.venv/
+__pycache__/
+.pytest_cache/
+_trash/

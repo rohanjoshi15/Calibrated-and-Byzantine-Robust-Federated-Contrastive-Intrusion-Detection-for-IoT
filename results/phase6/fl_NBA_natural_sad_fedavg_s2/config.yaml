@@ -1,0 +1,26 @@
+phase: phase6
+run_id: fl_NBA_natural_sad_fedavg_s2
+seed: 2
+split_seed: 2
+data:
+  name: nbaiot
+  benign_frac: 0.25
+  cap_train_att: 2000
+mode: fl
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 256
+  epochs: 30
+  loss: sad
+fl:
+  rounds: 15
+  local_epochs: 4
+  n_clients: 45
+  benign_scheme: natural
+  attack_scheme: group
+  algo: fedavg
+detect: {}
+eval:
+  test: true
+device: cuda

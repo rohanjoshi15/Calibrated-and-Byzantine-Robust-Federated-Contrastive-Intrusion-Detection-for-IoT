@@ -1,0 +1,19 @@
+phase: phase1
+run_id: debugC_A2_literal_zscore_s3
+seed: 3
+split_seed: 3
+data:
+  name: nslkdd
+  fs: paper
+  scaler: zscore
+  train_on: full
+mode: central
+train:
+  tau: 0.1
+  momentum: 0.0
+  batch_size: 256
+  epochs: 60
+  attack_frac: random
+eval:
+  test: true
+device: cuda

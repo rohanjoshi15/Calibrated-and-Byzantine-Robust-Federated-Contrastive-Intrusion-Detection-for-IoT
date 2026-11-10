@@ -1,0 +1,141 @@
+setting,partition,metric,feco_reported,device,ours_mean,ours_std,n_seeds,gap,within_2pts,note
+central,-,acc,89.55,cuda,85.95,0.76,5,-3.60,False,
+central,-,recall,86.80,cuda,82.38,1.39,5,-4.42,False,
+central,-,precision,94.39,cuda,92.11,0.18,5,-2.28,False,
+central,-,f1,90.44,cuda,86.97,0.80,5,-3.47,False,
+central,-,fpr,6.82,cuda,9.32,0.24,5,2.50,False,
+central,-,auroc,,cuda,95.57,0.53,5,,,
+central,-,auprc,,cuda,95.43,0.83,5,,,
+central,-,tpr@1,,cuda,36.11,10.28,5,,,
+central,-,tpr@5,,cuda,69.28,5.86,5,,,
+central,-,novel_recall,78.45,cuda,71.24,2.75,5,-7.21,False,
+central,-,DoS,97.16,cuda,95.12,0.49,5,-2.04,False,
+central,-,Probe,96.08,cuda,92.08,3.01,5,-4.00,False,
+central,-,R2L,50.91,cuda,41.59,4.08,5,-9.32,False,
+central,-,U2R,82.50,cuda,71.34,1.95,5,-11.16,False,
+fl,iid,acc,85.65,cuda,81.15,0.34,5,-4.50,False,
+fl,iid,recall,81.15,cuda,75.08,0.56,5,-6.07,False,
+fl,iid,precision,92.73,cuda,90.16,0.14,5,-2.57,False,
+fl,iid,f1,86.55,cuda,81.93,0.37,5,-4.62,False,
+fl,iid,fpr,8.41,cuda,10.82,0.13,5,2.41,False,
+fl,iid,auroc,,cuda,93.72,0.44,5,,,
+fl,iid,auprc,,cuda,94.44,0.21,5,,,
+fl,iid,tpr@1,,cuda,40.81,2.09,5,,,
+fl,iid,tpr@5,,cuda,54.99,2.40,5,,,
+fl,iid,novel_recall,,cuda,60.80,0.88,5,,,
+fl,iid,DoS,92.69,cuda,85.72,0.21,5,-6.97,False,
+fl,iid,Probe,98.68,cuda,94.22,1.77,5,-4.46,False,
+fl,iid,R2L,35.00,cuda,32.60,0.91,5,-2.40,False,
+fl,iid,U2R,74.00,cuda,28.36,7.16,5,-45.64,False,
+fl,noniid1,acc,86.23,cuda,81.45,0.34,5,-4.78,False,
+fl,noniid1,recall,82.10,cuda,75.56,0.54,5,-6.54,False,
+fl,noniid1,precision,92.89,cuda,90.27,0.14,5,-2.62,False,
+fl,noniid1,f1,87.16,cuda,82.26,0.37,5,-4.90,False,
+fl,noniid1,fpr,8.29,cuda,10.77,0.11,5,2.48,False,
+fl,noniid1,auroc,,cuda,93.97,0.26,5,,,
+fl,noniid1,auprc,,cuda,94.53,0.14,5,,,
+fl,noniid1,tpr@1,,cuda,42.20,3.07,5,,,
+fl,noniid1,tpr@5,,cuda,55.15,3.31,5,,,
+fl,noniid1,novel_recall,,cuda,62.82,0.96,5,,,
+fl,noniid1,DoS,93.12,cuda,86.23,0.52,5,-6.89,False,
+fl,noniid1,Probe,95.67,cuda,94.99,1.39,5,-0.68,True,
+fl,noniid1,R2L,41.03,cuda,32.65,0.84,5,-8.38,False,
+fl,noniid1,U2R,72.50,cuda,34.63,2.87,5,-37.87,False,
+fl,noniid2,acc,85.53,cuda,81.62,0.90,5,-3.91,False,
+fl,noniid2,recall,77.90,cuda,75.69,1.53,5,-2.21,False,
+fl,noniid2,precision,95.93,cuda,90.46,0.24,5,-5.47,False,
+fl,noniid2,f1,85.98,cuda,82.41,1.01,5,-3.57,False,
+fl,noniid2,fpr,4.26,cuda,10.55,0.11,5,6.29,False,
+fl,noniid2,auroc,,cuda,94.16,0.24,5,,,
+fl,noniid2,auprc,,cuda,94.95,0.20,5,,,
+fl,noniid2,tpr@1,,cuda,47.80,4.08,5,,,
+fl,noniid2,tpr@5,,cuda,57.09,2.47,5,,,
+fl,noniid2,novel_recall,,cuda,66.62,2.56,5,,,
+fl,noniid2,DoS,83.33,cuda,87.61,0.97,5,4.28,False,
+fl,noniid2,Probe,95.29,cuda,94.71,1.31,5,-0.58,True,
+fl,noniid2,R2L,36.49,cuda,29.48,4.34,5,-7.01,False,
+fl,noniid2,U2R,76.50,cuda,52.54,2.87,5,-23.96,False,
+self,iid,acc,81.91,cuda,80.77,0.12,5,-1.14,True,
+self,iid,recall,74.53,cuda,74.63,0.18,5,0.10,True,
+self,iid,precision,92.21,cuda,89.87,0.06,5,-2.34,False,
+self,iid,f1,82.43,cuda,81.52,0.13,5,-0.91,True,
+self,iid,fpr,8.33,cuda,11.12,0.06,5,2.79,False,
+self,iid,auroc,,cuda,91.15,0.24,5,,,
+self,iid,auprc,,cuda,92.78,0.17,5,,,
+self,iid,tpr@1,,cuda,39.34,0.79,5,,,
+self,iid,tpr@5,,cuda,53.14,0.38,5,,,
+self,iid,novel_recall,,cuda,60.01,0.39,5,,,
+self,iid,DoS,87.66,cuda,86.90,0.11,5,-0.76,True,
+self,iid,Probe,92.14,cuda,91.95,0.49,5,-0.19,True,
+self,iid,R2L,24.33,cuda,29.57,0.69,5,5.24,False,
+self,iid,U2R,63.07,cuda,24.31,0.76,5,-38.76,False,
+self,noniid1,acc,82.62,cuda,76.84,0.32,5,-5.78,False,
+self,noniid1,recall,75.69,cuda,66.41,0.76,5,-9.28,False,
+self,noniid1,precision,92.39,cuda,90.51,0.34,5,-1.88,True,
+self,noniid1,f1,83.21,cuda,75.59,0.34,5,-7.62,False,
+self,noniid1,fpr,8.23,cuda,9.38,0.39,5,1.15,True,
+self,noniid1,auroc,,cuda,91.01,0.29,5,,,
+self,noniid1,auprc,,cuda,92.37,0.25,5,,,
+self,noniid1,tpr@1,,cuda,37.43,2.12,5,,,
+self,noniid1,tpr@5,,cuda,54.63,1.63,5,,,
+self,noniid1,novel_recall,,cuda,51.09,1.77,5,,,
+self,noniid1,DoS,90.48,cuda,77.59,1.74,5,-12.89,False,
+self,noniid1,Probe,87.37,cuda,83.86,1.43,5,-3.51,False,
+self,noniid1,R2L,25.63,cuda,23.83,1.01,5,-1.80,True,
+self,noniid1,U2R,71.81,cuda,24.87,1.19,5,-46.94,False,
+self,noniid2,acc,67.66,cuda,69.74,0.84,5,2.08,False,
+self,noniid2,recall,46.51,cuda,51.94,1.52,5,5.43,False,
+self,noniid2,precision,93.89,cuda,91.41,0.50,5,-2.48,False,
+self,noniid2,f1,62.21,cuda,63.54,1.63,5,1.33,True,
+self,noniid2,fpr,4.39,cuda,6.74,0.21,5,2.35,False,
+self,noniid2,auroc,,cuda,90.46,0.21,5,,,
+self,noniid2,auprc,,cuda,91.35,0.21,5,,,
+self,noniid2,tpr@1,,cuda,30.16,1.42,5,,,
+self,noniid2,tpr@5,,cuda,54.93,1.33,5,,,
+self,noniid2,novel_recall,,cuda,37.94,1.16,5,,,
+self,noniid2,DoS,54.20,cuda,60.74,1.98,5,6.54,False,
+self,noniid2,Probe,47.22,cuda,66.93,1.71,5,19.71,False,
+self,noniid2,R2L,24.14,cuda,17.23,0.63,5,-6.91,False,
+self,noniid2,U2R,59.25,cuda,25.95,0.40,5,-33.30,False,
+central_debug_A1_literal,-,acc,89.55,cuda,84.22,3.04,5,-5.33,False,debug attempt D-013 (not used for selection)
+central_debug_A1_literal,-,recall,86.80,cuda,79.87,4.84,5,-6.93,False,debug attempt D-013 (not used for selection)
+central_debug_A1_literal,-,precision,94.39,cuda,91.29,1.06,5,-3.10,False,debug attempt D-013 (not used for selection)
+central_debug_A1_literal,-,f1,90.44,cuda,85.15,3.25,5,-5.29,False,debug attempt D-013 (not used for selection)
+central_debug_A1_literal,-,fpr,6.82,cuda,10.02,0.71,5,3.20,False,debug attempt D-013 (not used for selection)
+central_debug_A1_literal,-,auroc,,cuda,94.87,1.50,5,,,debug attempt D-013 (not used for selection)
+central_debug_A1_literal,-,auprc,,cuda,95.30,0.90,5,,,debug attempt D-013 (not used for selection)
+central_debug_A1_literal,-,tpr@1,,cuda,36.47,6.55,5,,,debug attempt D-013 (not used for selection)
+central_debug_A1_literal,-,tpr@5,,cuda,69.77,5.30,5,,,debug attempt D-013 (not used for selection)
+central_debug_A1_literal,-,novel_recall,78.45,cuda,69.32,10.47,5,-9.13,False,debug attempt D-013 (not used for selection)
+central_debug_A1_literal,-,DoS,97.16,cuda,92.32,3.61,5,-4.84,False,debug attempt D-013 (not used for selection)
+central_debug_A1_literal,-,Probe,96.08,cuda,94.50,3.19,5,-1.58,True,debug attempt D-013 (not used for selection)
+central_debug_A1_literal,-,R2L,50.91,cuda,35.66,12.01,5,-15.25,False,debug attempt D-013 (not used for selection)
+central_debug_A1_literal,-,U2R,82.50,cuda,69.85,13.45,5,-12.65,False,debug attempt D-013 (not used for selection)
+central_debug_A2_literal_zscore,-,acc,89.55,cuda,86.11,1.08,5,-3.44,False,debug attempt D-013 (not used for selection)
+central_debug_A2_literal_zscore,-,recall,86.80,cuda,83.00,1.90,5,-3.80,False,debug attempt D-013 (not used for selection)
+central_debug_A2_literal_zscore,-,precision,94.39,cuda,91.80,0.19,5,-2.59,False,debug attempt D-013 (not used for selection)
+central_debug_A2_literal_zscore,-,f1,90.44,cuda,87.17,1.13,5,-3.27,False,debug attempt D-013 (not used for selection)
+central_debug_A2_literal_zscore,-,fpr,6.82,cuda,9.79,0.13,5,2.97,False,debug attempt D-013 (not used for selection)
+central_debug_A2_literal_zscore,-,auroc,,cuda,95.49,0.29,5,,,debug attempt D-013 (not used for selection)
+central_debug_A2_literal_zscore,-,auprc,,cuda,96.05,0.41,5,,,debug attempt D-013 (not used for selection)
+central_debug_A2_literal_zscore,-,tpr@1,,cuda,43.14,6.33,5,,,debug attempt D-013 (not used for selection)
+central_debug_A2_literal_zscore,-,tpr@5,,cuda,71.43,5.60,5,,,debug attempt D-013 (not used for selection)
+central_debug_A2_literal_zscore,-,novel_recall,78.45,cuda,69.10,5.09,5,-9.35,False,debug attempt D-013 (not used for selection)
+central_debug_A2_literal_zscore,-,DoS,97.16,cuda,93.22,2.45,5,-3.94,False,debug attempt D-013 (not used for selection)
+central_debug_A2_literal_zscore,-,Probe,96.08,cuda,92.91,1.66,5,-3.17,False,debug attempt D-013 (not used for selection)
+central_debug_A2_literal_zscore,-,R2L,50.91,cuda,48.30,2.81,5,-2.61,False,debug attempt D-013 (not used for selection)
+central_debug_A2_literal_zscore,-,U2R,82.50,cuda,82.99,0.82,5,0.49,True,debug attempt D-013 (not used for selection)
+central_debug_A3_sel_log1p,-,acc,89.55,cuda,88.08,0.45,5,-1.47,True,debug attempt D-013 (not used for selection)
+central_debug_A3_sel_log1p,-,recall,86.80,cuda,86.77,0.74,5,-0.03,True,debug attempt D-013 (not used for selection)
+central_debug_A3_sel_log1p,-,precision,94.39,cuda,91.85,0.19,5,-2.54,False,debug attempt D-013 (not used for selection)
+central_debug_A3_sel_log1p,-,f1,90.44,cuda,89.23,0.44,5,-1.21,True,debug attempt D-013 (not used for selection)
+central_debug_A3_sel_log1p,-,fpr,6.82,cuda,10.18,0.23,5,3.36,False,debug attempt D-013 (not used for selection)
+central_debug_A3_sel_log1p,-,auroc,,cuda,94.83,0.27,5,,,debug attempt D-013 (not used for selection)
+central_debug_A3_sel_log1p,-,auprc,,cuda,94.98,0.45,5,,,debug attempt D-013 (not used for selection)
+central_debug_A3_sel_log1p,-,tpr@1,,cuda,40.43,4.59,5,,,debug attempt D-013 (not used for selection)
+central_debug_A3_sel_log1p,-,tpr@5,,cuda,55.11,3.14,5,,,debug attempt D-013 (not used for selection)
+central_debug_A3_sel_log1p,-,novel_recall,78.45,cuda,77.41,1.80,5,-1.04,True,debug attempt D-013 (not used for selection)
+central_debug_A3_sel_log1p,-,DoS,97.16,cuda,97.56,0.77,5,0.40,True,debug attempt D-013 (not used for selection)
+central_debug_A3_sel_log1p,-,Probe,96.08,cuda,97.29,2.42,5,1.21,True,debug attempt D-013 (not used for selection)
+central_debug_A3_sel_log1p,-,R2L,50.91,cuda,50.17,1.97,5,-0.74,True,debug attempt D-013 (not used for selection)
+central_debug_A3_sel_log1p,-,U2R,82.50,cuda,82.09,2.36,5,-0.41,True,debug attempt D-013 (not used for selection)

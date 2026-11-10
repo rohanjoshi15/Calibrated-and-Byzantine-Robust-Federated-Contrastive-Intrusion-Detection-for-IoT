@@ -1,0 +1,17 @@
+phase: phase8_check
+run_id: detA_corrC_s0
+seed: 0
+split_seed: 0
+data:
+  name: nslkdd
+  fs: procedure
+mode: central
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 128
+  epochs: 60
+  normalize: true
+eval:
+  test: true
+device: cuda

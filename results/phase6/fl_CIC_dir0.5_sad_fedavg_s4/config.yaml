@@ -1,0 +1,26 @@
+phase: phase6
+run_id: fl_CIC_dir0.5_sad_fedavg_s4
+seed: 4
+split_seed: 4
+data:
+  name: ciciot
+mode: fl
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 256
+  epochs: 30
+  loss: sad
+fl:
+  rounds: 15
+  local_epochs: 4
+  n_clients: 50
+  benign_scheme: dirichlet
+  benign_alpha: 0.5
+  attack_scheme: dirichlet
+  attack_alpha: 0.5
+  algo: fedavg
+detect: {}
+eval:
+  test: true
+device: cuda

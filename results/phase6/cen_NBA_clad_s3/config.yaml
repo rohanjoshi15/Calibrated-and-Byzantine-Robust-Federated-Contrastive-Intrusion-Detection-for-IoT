@@ -1,0 +1,26 @@
+phase: phase6
+run_id: cen_NBA_clad_s3
+seed: 3
+split_seed: 3
+data:
+  name: nbaiot
+mode: central
+train:
+  tau: 0.1
+  momentum: 0.9
+  batch_size: 512
+  epochs: 30
+  loss: clad
+detect:
+  K:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  vmf_K:
+  - 4
+  - 8
+eval:
+  test: true
+device: cuda

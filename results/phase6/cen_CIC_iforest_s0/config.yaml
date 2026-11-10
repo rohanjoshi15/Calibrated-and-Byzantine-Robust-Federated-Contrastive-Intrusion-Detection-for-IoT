@@ -1,0 +1,10 @@
+phase: phase6
+run_id: cen_CIC_iforest_s0
+seed: 0
+split_seed: 0
+data:
+  name: ciciot
+mode: iforest
+eval:
+  test: true
+device: cuda

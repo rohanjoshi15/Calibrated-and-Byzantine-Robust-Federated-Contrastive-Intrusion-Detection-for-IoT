@@ -1,0 +1,17 @@
+phase: phase3
+run_id: tuneNBA_tau0.5_ep30
+seed: 0
+split_seed: 0
+data:
+  name: nbaiot
+mode: central
+train:
+  tau: 0.5
+  momentum: 0.9
+  batch_size: 512
+  epochs: 30
+detect:
+  K:
+  - 1
+eval:
+  test: false

@@ -1,0 +1,24 @@
+phase: phase1
+run_id: finalFL_noniid1_full_s0
+seed: 0
+split_seed: 0
+data:
+  name: nslkdd
+  fs: paper
+  scaler: minmax
+  train_on: full
+mode: fl
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 64
+  epochs: 60
+  normalize: true
+fl:
+  n_clients: 50
+  scheme: noniid1
+  rounds: 15
+  local_epochs: 4
+eval:
+  test: true
+device: cuda

@@ -1,0 +1,6 @@
+dataset,model,batch,train_device,infer_device,ms_per_batch,us_per_flow,test_acc@conf0.05,test_fpr@conf0.05,auroc,fp32_param_bytes
+NSL,fp32,1.0000,cuda,cpu,0.0713,71.2650,86.8036,9.0310,95.6845,
+NSL,fp32,1024.0000,cuda,cpu,1.8102,1.7677,86.8036,9.0310,95.6845,
+NSL,int8_dynamic,1.0000,cuda,cpu,0.1400,139.9744,86.8879,9.1134,95.7797,
+NSL,int8_dynamic,1024.0000,cuda,cpu,1.5145,1.4790,86.8879,9.1134,95.7797,
+NSL,agreement_int8_vs_fp32,,,,,,99.5875,,,321536.0000

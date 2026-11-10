@@ -1,0 +1,28 @@
+phase: phase6
+run_id: fl_NSL_dir0.5_sad_fedavg_s2
+seed: 2
+split_seed: 2
+data:
+  name: nslkdd
+  fs: procedure
+mode: fl
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 64
+  epochs: 60
+  normalize: true
+  loss: sad
+fl:
+  rounds: 15
+  local_epochs: 4
+  n_clients: 50
+  benign_scheme: dirichlet
+  benign_alpha: 0.5
+  attack_scheme: dirichlet
+  attack_alpha: 0.5
+  algo: fedavg
+detect: {}
+eval:
+  test: true
+device: cuda

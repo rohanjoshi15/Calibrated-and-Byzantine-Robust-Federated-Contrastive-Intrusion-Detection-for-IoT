@@ -1,0 +1,44 @@
+phase: phase3
+run_id: fedNSL_lam0.1_s0
+seed: 0
+split_seed: 0
+data:
+  name: nslkdd
+  fs: procedure
+mode: fed
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 64
+  epochs: 60
+  normalize: true
+  lam_proto: 0.1
+  K_train: 4
+fl:
+  n_clients: 50
+  rounds: 15
+  local_epochs: 4
+  benign_scheme: dirichlet
+  benign_alpha: 0.5
+  attack_scheme: dirichlet
+  attack_alpha: 0.5
+detect:
+  K_fed:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  sigma:
+  - 0.0
+  - 0.01
+  - 0.05
+  - 0.1
+  calib_caps:
+  - 25
+  - 50
+  - 100
+  - 200
+eval:
+  test: true
+device: cuda

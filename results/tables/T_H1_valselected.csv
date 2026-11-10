@@ -1,0 +1,5 @@
+dataset,mode,n_seeds,device,tpr1_K1_mean,tpr1_K1_std,tpr1_selected_mean,tpr1_selected_std,mean_diff_pts,std_diff,ci95_lo,ci95_hi,wilcoxon_p,n_nonzero,wins,ties,losses,selected_counts
+NSL-KDD,central,10,cuda,33.3055,12.2717,43.8572,2.5698,10.5517,11.7635,4.3622,18.1057,0.0039,9,9,1,0,vmf4:7;kmeans4:1;template:1;kmeans2:1
+NSL-KDD,federated,10,cuda,41.3239,2.3399,41.9590,2.5004,0.6351,2.0083,0.0000,1.9052,1.0000,1,1,9,0,template:9;kmeans2:1
+CICIoT2023,central,10,cuda,76.5348,6.5694,76.4300,7.1650,-0.1047,1.2751,-0.9614,0.5339,0.7344,9,5,1,4,kmeans2:4;vmf8:4;template:1;kmeans4:1
+CICIoT2023,federated,10,cuda,72.3964,5.1249,72.8368,4.8804,0.4404,0.7809,-0.0140,0.8871,0.1484,8,6,2,2,vmf4:5;vmf8:2;template:2;kmeans4:1

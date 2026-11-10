@@ -1,0 +1,7 @@
+dataset,attack,frac,n_seeds,key,device,rho_global,rho_robust,rho_honest,kept_byz,n_byz,asr_global,asr_global_std,asr_robust,asr_robust_std,asr_honest_thr,asr_honest_thr_std,tpr_global_a0.05,tpr_global_a0.05_std,tpr_robust_a0.05,tpr_robust_a0.05_std,testfpr_global_a0.05,testfpr_global_a0.05_std,testfpr_robust_a0.05,testfpr_robust_a0.05_std
+NSL,calib,0.100,5,attackcalib_frac0.1_boost3.0_f_max0.3,cuda,-1.000,0.827,0.796,0.000,5.000,100.000,0.000,0.479,0.072,0.537,0.107,0.000,0.000,74.665,1.278,0.000,0.000,15.204,1.032
+NSL,calib,0.200,5,attackcalib_frac0.2_boost3.0_f_max0.3,cuda,-1.000,0.810,0.799,0.000,10.000,100.000,0.000,0.422,0.061,0.435,0.065,0.000,0.000,74.054,1.428,0.000,0.000,14.903,0.916
+NSL,calib,0.300,5,attackcalib_frac0.3_boost3.0_f_max0.3,cuda,-1.000,0.793,0.793,0.000,15.000,100.000,0.000,0.442,0.039,0.442,0.039,0.000,0.000,73.581,1.448,0.000,0.000,14.654,0.974
+NBA,calib,0.100,5,attackcalib_frac0.1_boost3.0_f_max0.3,cuda,-1.000,0.879,0.881,0.000,4.000,100.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,99.994,0.006,0.000,0.000,2.626,0.194
+NBA,calib,0.200,5,attackcalib_frac0.2_boost3.0_f_max0.3,cuda,-1.000,0.881,0.883,0.000,9.000,100.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,99.994,0.006,0.000,0.000,2.752,0.176
+NBA,calib,0.300,5,attackcalib_frac0.3_boost3.0_f_max0.3,cuda,-1.000,0.883,0.883,0.000,14.000,100.000,0.000,0.000,0.001,0.000,0.001,0.000,0.000,99.995,0.005,0.000,0.000,2.854,0.260

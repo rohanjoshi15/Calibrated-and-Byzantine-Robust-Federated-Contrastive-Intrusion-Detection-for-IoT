@@ -1,0 +1,35 @@
+phase: phase6
+run_id: fl_NSL_iid_feco_fedprox_s3
+seed: 3
+split_seed: 3
+data:
+  name: nslkdd
+  fs: procedure
+mode: fl
+train:
+  tau: 0.2
+  momentum: 0.9
+  batch_size: 64
+  epochs: 60
+  normalize: true
+  mu_prox: 0.1
+fl:
+  rounds: 15
+  local_epochs: 4
+  n_clients: 50
+  benign_scheme: iid
+  attack_scheme: iid
+  algo: fedprox
+detect:
+  K:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  vmf_K:
+  - 4
+  - 8
+eval:
+  test: true
+device: cuda

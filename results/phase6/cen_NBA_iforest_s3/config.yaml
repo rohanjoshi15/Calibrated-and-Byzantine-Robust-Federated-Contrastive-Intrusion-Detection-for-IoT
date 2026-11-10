@@ -1,0 +1,10 @@
+phase: phase6
+run_id: cen_NBA_iforest_s3
+seed: 3
+split_seed: 3
+data:
+  name: nbaiot
+mode: iforest
+eval:
+  test: true
+device: cuda
